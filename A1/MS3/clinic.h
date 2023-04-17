@@ -38,30 +38,56 @@ piece of work is entirely of my own creation.
 // ToDo:
 
 
+
+
 //////////////////////////////////////
 // Structures
 //////////////////////////////////////
 
 // Data type: Phone
 // (Copy your code from MS#2)
-
+struct Phone{
+    char description[PHONE_DESC_LEN+1];
+    char number[PHONE_LEN+1];
+};
 
 // Data type: Patient 
 // (Copy your code from MS#2)
-
+struct Patient{
+    int patientNumber;
+    char name[NAME_LEN+1];
+    struct Phone phone;
+};
 // ------------------- MS#3 -------------------
 
 // Data type: Time
 // ToDo:
 
+struct Time{
+
+    int hour;
+    int min;
+
+};
 
 // Data type: Date
 // ToDo:
-
+struct Date
+{
+    int year;
+    int month;
+    int day;
+};
 
 // Data type: Appointment
 // ToDo:
 
+struct Appointment{
+
+    struct Date date;
+    struct Time time;
+    
+};
 
 
 // ClinicData type: Provided to student
@@ -184,10 +210,10 @@ void inputPhoneData(struct Phone* phone);
 //////////////////////////////////////
 
 // Import patient data from file into a Patient array (returns # of records read)
-int importPatients(const char* datafile, struct Patient patients[], int max);
+int importPatients(char *filename, const struct Patient patient[], int max);
 
 // Import appointment data from file into an Appointment array (returns # of records read)
-int importAppointments(const char* datafile, struct Appointment appoints[], int max);
+int importAppointments(char *filename, const struct Appointment appoints[], int max);
 
 
 #endif // !CLINIC_H

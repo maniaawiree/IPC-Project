@@ -46,12 +46,22 @@ void suspend(void);
 
 
 
-
-
 //////////////////////////////////////
 // USER INPUT FUNCTIONS
 //////////////////////////////////////
 
+
+int inputInt(void);
+
+int inputIntPositive(void);
+
+int inputIntRange(int minInRange, int maxInRange);
+
+char inputCharOption(const char *inputCSstring);
+
+void inputCString(char *inputCstring, int minInRange,int maxInRange);
+
+void displayFormattedPhone(const char* inputCString);
 
 
 

@@ -1,0 +1,37 @@
+Three clinic module/library functions have been completely 
+supplied for you: "displayScheduleHeader", "displayScheduleData", 
+and "menuAppointment", along with two function prototypes: "importPatients" 
+and "importAppointments" (responsible for data import). 
+These functions provide you with the necessary framework 
+to get started in this final milestone.
+
+
+Appointment Management
+==============================
+1) VIEW   ALL Appointments
+2) VIEW   Appointments by DATE
+3) ADD    Appointment
+4) REMOVE Appointment
+------------------------------
+0) Previous menu
+------------------------------
+Selection: 
+
+
+selection : 1
+call viewAllAppointments()
+viewAllAppointments{
+at some point you need to call "displayScheduleHeader" and "displayScheduleData" functions
+
+call displayScheduleTableHeader that receives two arguments
+const struct Date* date and int isAllRecords (it should be 1 or true because this function is being called from inside the viewAllAppointments)
+
+then in an iteration call displayScheduleData() that receives three args:
+(const struct Patient* patient,
+                         const struct Appointment* appoint,
+                         int includeDateField)
+
+
+
+
+}

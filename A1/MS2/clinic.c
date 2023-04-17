@@ -19,7 +19,7 @@ piece of work is entirely of my own creation.
 #include "core.h"
 // include the user library "clinic" where the function prototypes are declared
 #include "clinic.h"
-
+//A new module "clinic" is now required which will be used to organize all the clinic-centric components and where you will be placing most of your remaining work.
 
 //////////////////////////////////////
 // DISPLAY FUNCTIONS
